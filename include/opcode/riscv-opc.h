@@ -23,6 +23,8 @@
 /* Instruction opcode macros.  */
 #define MATCH_ENH 0x700b
 #define MASK_ENH 0xfe007fff
+#define MATCH_CTRST 0x600b
+#define MASK_CTRST 0xffffffff
 #define MATCH_LF0 0x2b
 #define MASK_LF0 0x1f0707f
 #define MATCH_LF1 0x102b
@@ -3759,6 +3761,7 @@
 #endif /* RISCV_ENCODING_H */
 #ifdef DECLARE_INSN
 DECLARE_INSN(enh, MATCH_ENH, MASK_ENH)
+DECLARE_INSN(ctrst, MATCH_CTRST, MASK_CTRST)
 DECLARE_INSN(lf0, MATCH_LF0, MASK_LF0)
 DECLARE_INSN(lf1, MATCH_LF1, MASK_LF1)
 DECLARE_INSN(lf2, MATCH_LF2, MASK_LF2)

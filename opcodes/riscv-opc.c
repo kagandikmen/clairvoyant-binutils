@@ -592,6 +592,7 @@ const struct riscv_opcode riscv_opcodes[] =
 {"subw",       64, INSN_CLASS_C, "Cs,Cw,Ct",  MATCH_C_SUBW, MASK_C_SUBW, match_opcode, INSN_ALIAS },
 {"subw",       64, INSN_CLASS_I, "d,s,t",     MATCH_SUBW, MASK_SUBW, match_opcode, 0 },
 {"enh",         0, INSN_CLASS_I, "s,t",       MATCH_ENH, MASK_ENH, match_opcode, 0 },
+{"ctrst",       0, INSN_CLASS_I, "",          MATCH_CTRST, MASK_CTRST, match_opcode, 0 },
 {"lf0",         0, INSN_CLASS_I, "q(s)",      MATCH_LF0, MASK_LF0, match_opcode, 0 },
 {"lf1",         0, INSN_CLASS_I, "q(s)",      MATCH_LF1, MASK_LF1, match_opcode, 0 },
 {"lf2",         0, INSN_CLASS_I, "q(s)",      MATCH_LF2, MASK_LF2, match_opcode, 0 },
